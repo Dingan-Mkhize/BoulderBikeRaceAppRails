@@ -1,0 +1,11 @@
+<h1>Photos#index</h1>
+<div class="flex flex-wrap gap-5">
+  <% @photos.each do |photo| %>
+    <div class="max-w-[300px]">
+      <img src="<%= photo[:url] %>" alt="<%= photo[:title] %>" class="w-full h-auto rounded-3xl">
+      <p class="text-center mt-2"><%= photo[:title] %></p>
+    </div>
+  <% end %>
+</div>
+
+
